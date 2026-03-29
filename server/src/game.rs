@@ -1,4 +1,5 @@
 use rand::RngExt;
+use uuid::Uuid;
 use std::{
     collections::{HashMap, HashSet},
     fs,
@@ -59,7 +60,7 @@ impl GameState {
         let player_count = 4;
         let eliminated_players = HashSet::new();
         let impostor = (rng.random::<u32>() as usize % player_count) as u32 + 1;
-        let data = fs::read_to_string("assets/prompts.json").expect("Prompt dataset not found");
+        let data = fs::read_to_string("assets/prompts.json").expect("[ERROR] Prompt dataset not found");
         let parsed: Vec<PromptPair> = serde_json::from_str(&data).unwrap();
         let prompt_idx = rng.random::<u32>() as usize % parsed.len();
         let prompt_pair: &PromptPair = &parsed[prompt_idx];
@@ -85,7 +86,7 @@ impl GameState {
     }
 
     fn load_bots(&mut self) {
-        let data = fs::read_to_string("assets/bot_dataset.json").expect("Bot dataset not found");
+        let data = fs::read_to_string("assets/bot_dataset.json").expect("[ERROR] Bot dataset not found");
         let parsed: Vec<BotPrompt> = serde_json::from_str(&data).unwrap();
         let mut used = HashSet::<usize>::new();
         let mut rng = rand::rng();
@@ -137,8 +138,9 @@ impl GameState {
     }
 }
 
-pub async fn run(state: &mut state::State, input: &String) -> String {
-    let state::State { config, game_state } = state;
+pub async fn run(state: &mut state::State, session_id: &Uuid, input: &String) -> String {
+    let config = &state.config;
+    let game_state = state.sessions.get_mut(session_id).expect("[ERROR] Failed to get session state");
     let mut ret = String::new();
     loop {
         match game_state.round {
@@ -289,7 +291,7 @@ pub async fn run(state: &mut state::State, input: &String) -> String {
                     .await;
                     let bot_vote = bot_response
                         .vote
-                        .expect("ERROR: bot did not vote during voting round");
+                        .expect("[ERROR] Bot did not vote during voting round");
                     match votes.get_mut(&bot_vote) {
                         Some(val) => *val += 1,
                         None => {

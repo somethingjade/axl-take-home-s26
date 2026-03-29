@@ -1,6 +1,7 @@
-use std::sync::Arc;
+use std::{collections::HashMap, sync::Arc};
 
 use tokio::sync::Mutex;
+use uuid::Uuid;
 
 use crate::{config::Config, game::GameState};
 
@@ -12,5 +13,5 @@ pub struct AppState {
 #[derive(Clone, Debug)]
 pub struct State {
     pub config: Config,
-    pub game_state: GameState,
+    pub sessions: HashMap<Uuid, GameState>
 }
