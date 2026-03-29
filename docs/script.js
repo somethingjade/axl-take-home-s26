@@ -12,6 +12,7 @@ window.onload = async () => {
 const send = async (msg) => {
 	const chat = document.getElementById("chat");
 	chat.innerText += "\n\nPlease wait...";
+	scrollToBottom();
 	const res = await fetch(`${API_BASE}/play`, {
 		method: "POST",
 		headers: {"Content-Type": "application/json"},
@@ -37,7 +38,6 @@ const sendBtn = async () => {
 	}
 }
 
-// Define scrollToBottom (safe, minimal)
 function scrollToBottom() {
 	const chat = document.getElementById("chat");
 	if (!chat) return;
@@ -47,19 +47,13 @@ function scrollToBottom() {
 window.addEventListener("load", () => {
 	const chat = document.getElementById("chat");
 	const input = document.getElementById("input");
-
-	// Autofocus input
 	if (input) input.focus();
-
-	// Enter-to-send (only when typing)
 	document.addEventListener("keydown", (e) => {
 		if (e.key === "Enter" && document.activeElement === input) {
 			e.preventDefault();
 			sendBtn();
 		}
 	});
-
-	// Fade-in effect on chat updates
 	if (chat) {
 		let lastText = chat.innerText;
 
@@ -76,7 +70,6 @@ window.addEventListener("load", () => {
 				chat.style.transform = "translateY(0)";
 			});
 		});
-
 		observer.observe(chat, {
 			childList: true,
 			subtree: true,
