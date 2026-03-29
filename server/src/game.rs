@@ -334,11 +334,19 @@ pub async fn run(state: &mut state::State, session_id: &Uuid, input: &String) ->
                 };
                 if eliminate == 1 {
                     ret.push_str(format!("\n\nYou were voted out - game over!").as_str());
+                    if game_state.impostor == 1 {
+                        ret.push_str(format!("\nThe prompt was: {}", game_state.prompt).as_str());
+                    } else {
+                        ret.push_str(format!("\nPlayer {} was the impostor", game_state.impostor).as_str());
+                        ret.push_str(format!("\nThe impostor's prompt was: {}", game_state.fake_prompt).as_str());
+
+                    }
                     game_state.round = Round::End;
                     return ret;
                 }
                 if impostor_eliminated {
                     ret.push_str("\n\nGame Master: Congratulations! You have successfully voted out the impostor!");
+                    ret.push_str(format!("\nThe impostor's prompt was: {}", game_state.fake_prompt).as_str());
                     game_state.round = Round::End;
                     return ret;
                 }
@@ -346,6 +354,11 @@ pub async fn run(state: &mut state::State, session_id: &Uuid, input: &String) ->
                     && game_state.eliminated_players.len() == game_state.player_count - 2
                 {
                     ret.push_str(format!("\n\nGame Master: There are only 2 players remaining. The impostor, Player {}, wins!", game_state.impostor).as_str());
+                    if game_state.impostor == 1 {
+                        ret.push_str(format!("\nThe prompt was: {}", game_state.prompt).as_str());
+                    } else {
+                        ret.push_str(format!("\nThe impostor's prompt was: {}", game_state.fake_prompt).as_str());
+                    }
                     game_state.round = Round::End;
                     return ret;
                 }
