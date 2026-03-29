@@ -202,6 +202,7 @@ pub async fn run(state: &mut state::State, session_id: &Uuid, input: &String) ->
                 }
             }
             Round::Answer(mut id) => {
+                let old_ret = ret;
                 ret = String::new();
                 if id != 1 {
                     ret.push_str(format!("\n\nPlayer 1: {input}").as_str());
@@ -223,6 +224,7 @@ pub async fn run(state: &mut state::State, session_id: &Uuid, input: &String) ->
                 }
                 game_state.log.push_str(&game_state.player_prompt);
                 game_state.log.push_str(format!("{ret}").as_str());
+                ret = old_ret + &ret;
                 loop {
                     if id == game_state.player_count as u32 {
                         game_state.round = Round::Discussion;
