@@ -18,6 +18,7 @@ pub enum Round {
     Introductions,
     Question(u32),
     Answer(u32),
+    Discussion,
     Voting,
 }
 
@@ -216,8 +217,12 @@ pub async fn run(state: &mut state::State, input: &String) -> String {
                 game_state.log.push_str(format!("{ret}").as_str());
                 loop {
                     if id == game_state.player_count as u32 {
-                        game_state.round = Round::Voting;
-                        game_state.player_prompt = "\n\nGame Master: It's time to vote! Please state the number of the player who you believe to be the impostor.".to_string();
+                        // game_state.round = Round::Voting;
+                        // game_state.player_prompt = "\n\nGame Master: It's time to vote! Please state the number of the player who you believe to be the impostor.".to_string();
+                        // ret.push_str(&game_state.player_prompt);
+                        // return ret;
+                        game_state.round = Round::Discussion;
+                        game_state.player_prompt ="\n\nGame Master: It's almost time to vote! Players, please provide your thoughts before we proceed to voting.".to_string();
                         ret.push_str(&game_state.player_prompt);
                         return ret;
                     } else {
@@ -232,6 +237,30 @@ pub async fn run(state: &mut state::State, input: &String) -> String {
                         }
                     }
                 }
+            }
+            Round::Discussion => {
+                ret.push_str(format!("\n\nPlayer 1: {input}").as_str());
+                for i in 1..game_state.player_count {
+                    let bot_id = i as u32 + 1;
+                    if game_state.eliminated_players.contains(&bot_id) {
+                        continue;
+                    }
+                    let prompt = build_prompt(&game_state.log, &game_state.player_prompt);
+                    let bot_response = call_llm(
+                        config,
+                        &game_state.bots[bot_id as usize - 2].system_prompt,
+                        &prompt,
+                    )
+                    .await;
+                    let bot_text = bot_response.text;
+                    ret.push_str(format!("\n\nPlayer {}: {}", bot_id, bot_text).as_str());
+                }
+                game_state.log.push_str(&game_state.player_prompt);
+                game_state.log.push_str(format!("{ret}").as_str());
+                game_state.round = Round::Voting;
+                game_state.player_prompt = "\n\nGame Master: It's time to vote! Please state the number of the player who you believe to be the impostor.".to_string();
+                ret.push_str(&game_state.player_prompt);
+                return ret;
             }
             Round::Voting => {
                 let player_vote = match input.parse::<u32>() {

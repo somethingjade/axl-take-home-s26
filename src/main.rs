@@ -15,8 +15,10 @@ struct Output {
 }
 
 async fn handler(State(state): State<AppState>, Json(input): Json<Input>) -> Json<Output> {
+    println!("[DEBUG] Input: {}", input.message);
     let mut inner_state = state.state.lock().await;
     let reply = game::run(&mut inner_state, &input.message).await;
+    println!("[DEBUG] Reply: {}", reply);
     Json(Output { reply })
 }
 
