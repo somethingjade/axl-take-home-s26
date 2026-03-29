@@ -56,14 +56,11 @@ window.addEventListener("load", () => {
 	});
 	if (chat) {
 		let lastText = chat.innerText;
-
 		const observer = new MutationObserver(() => {
 			if (chat.innerText === lastText) return;
 			lastText = chat.innerText;
-
 			chat.style.opacity = "0";
 			chat.style.transform = "translateY(6px)";
-
 			requestAnimationFrame(() => {
 				chat.style.transition = "opacity 0.2s ease, transform 0.2s ease";
 				chat.style.opacity = "1";
