@@ -11,7 +11,7 @@ window.onload = async () => {
 
 const send = async (msg) => {
 	const chat = document.getElementById("chat");
-	chat.innerText += "\nPlease wait...";
+	chat.innerText += "\n\nPlease wait...";
 	const res = await fetch(`${API_BASE}/play`, {
 		method: "POST",
 		headers: {"Content-Type": "application/json"},
@@ -19,7 +19,7 @@ const send = async (msg) => {
 	});
 	const data = await res.json();
 	chat.innerText = chat.innerText.replace(
-		"\nPlease wait...",
+		"\n\nPlease wait...",
 		data.reply
 	);
 	scrollToBottom();
