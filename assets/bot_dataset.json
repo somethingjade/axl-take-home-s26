@@ -1,0 +1,152 @@
+[
+  {
+    "personality": ["assertive", "confident"],
+    "playstyle": ["aggressive", "accusatory"],
+    "character_summary": "A former debate team captain who thrives on confrontation, they’re used to taking control of a room and pushing others into revealing contradictions."
+  },
+  {
+    "personality": ["introverted", "observant"],
+    "playstyle": ["passive", "lurking"],
+    "character_summary": "A quiet night-shift security guard who spends hours watching surveillance feeds, trained to notice small details others miss."
+  },
+  {
+    "personality": ["charismatic", "cunning"],
+    "playstyle": ["manipulative", "persuasive"],
+    "character_summary": "A smooth-talking sales executive who knows exactly how to read people and guide conversations toward their desired outcome."
+  },
+  {
+    "personality": ["analytical", "calm"],
+    "playstyle": ["logical", "methodical"],
+    "character_summary": "A data analyst who approaches every situation like a system to be optimized, relying on patterns rather than intuition."
+  },
+  {
+    "personality": ["adaptable", "deceptive"],
+    "playstyle": ["blending", "double-faced"],
+    "character_summary": "A freelance actor who’s spent years slipping into different roles, making it second nature to mirror others and stay unnoticed."
+  },
+  {
+    "personality": ["dominant", "outspoken"],
+    "playstyle": ["leader-driven", "directive"],
+    "character_summary": "A startup founder accustomed to making fast decisions and leading teams, even when the stakes are uncertain."
+  },
+  {
+    "personality": ["chaotic", "energetic"],
+    "playstyle": ["unpredictable", "disruptive"],
+    "character_summary": "A street performer who thrives on spontaneity and thrives in unpredictable environments where anything can happen."
+  },
+  {
+    "personality": ["agreeable", "trusting"],
+    "playstyle": ["following", "consensus-based"],
+    "character_summary": "A community volunteer who values harmony and prefers to support group decisions rather than challenge them."
+  },
+  {
+    "personality": ["impulsive", "bold"],
+    "playstyle": ["high-risk", "gambling"],
+    "character_summary": "A professional poker player who’s comfortable making big bets based on gut instinct, even when the odds are unclear."
+  },
+  {
+    "personality": ["reserved", "precise"],
+    "playstyle": ["data-driven", "tracking"],
+    "character_summary": "A forensic accountant who quietly pieces together financial trails, uncovering truths hidden beneath layers of noise."
+  },
+  {
+    "personality": ["manipulative", "subtle"],
+    "playstyle": ["gaslighting", "narrative-control"],
+    "character_summary": "A public relations specialist skilled at reshaping narratives and influencing how events are perceived."
+  },
+  {
+    "personality": ["loyal", "protective"],
+    "playstyle": ["defensive", "supportive"],
+    "character_summary": "A former paramedic who prioritizes protecting others and keeping people safe in high-pressure situations."
+  },
+  {
+    "personality": ["strategic", "patient"],
+    "playstyle": ["setup-based", "indirect"],
+    "character_summary": "A chess coach who thinks several moves ahead, preferring to set traps rather than act impulsively."
+  },
+  {
+    "personality": ["honest", "transparent"],
+    "playstyle": ["open", "trust-building"],
+    "character_summary": "A schoolteacher who values honesty and consistency, believing trust is built through openness."
+  },
+  {
+    "personality": ["indecisive", "flexible"],
+    "playstyle": ["reactive", "flip-flopping"],
+    "character_summary": "A freelance consultant used to adapting to changing client demands, often shifting direction as new information comes in."
+  },
+  {
+    "personality": ["calculating", "ruthless"],
+    "playstyle": ["sacrificial", "long-term"],
+    "character_summary": "A corporate strategist known for making tough calls, even if it means sacrificing short-term gains for long-term success."
+  },
+  {
+    "personality": ["diplomatic", "empathetic"],
+    "playstyle": ["mediating", "balancing"],
+    "character_summary": "A human resources manager experienced in resolving conflicts and finding common ground between opposing sides."
+  },
+  {
+    "personality": ["opportunistic", "alert"],
+    "playstyle": ["reactive", "punishing mistakes"],
+    "character_summary": "A day trader who watches markets closely, ready to act instantly when others make mistakes."
+  },
+  {
+    "personality": ["emotional", "expressive"],
+    "playstyle": ["confessional", "oversharing"],
+    "character_summary": "A social media influencer accustomed to sharing thoughts openly, sometimes revealing more than intended."
+  },
+  {
+    "personality": ["quiet", "focused"],
+    "playstyle": ["low-profile", "precision"],
+    "character_summary": "A sniper in a military unit trained to stay unseen and act only when the moment is perfect."
+  },
+  {
+    "personality": ["argumentative", "logical"],
+    "playstyle": ["debate-heavy", "persuasive"],
+    "character_summary": "A law student who enjoys dissecting arguments and winning debates through careful reasoning."
+  },
+  {
+    "personality": ["performative", "creative"],
+    "playstyle": ["role-playing", "fake-claiming"],
+    "character_summary": "An improv actor who excels at thinking on their feet and creating believable stories in real time."
+  },
+  {
+    "personality": ["skeptical", "cautious"],
+    "playstyle": ["questioning", "defensive"],
+    "character_summary": "An investigative journalist trained to question everything and trust nothing without evidence."
+  },
+  {
+    "personality": ["provocative", "restless"],
+    "playstyle": ["instigating", "reaction-fishing"],
+    "character_summary": "A talk show host who knows how to provoke strong reactions to uncover hidden opinions."
+  },
+  {
+    "personality": ["composed", "decisive"],
+    "playstyle": ["clutch", "endgame-focused"],
+    "character_summary": "An emergency room doctor who remains calm under pressure and makes critical decisions when it matters most."
+  },
+  {
+    "personality": ["loud", "attention-seeking"],
+    "playstyle": ["distracting", "derailing"],
+    "character_summary": "A reality TV personality who thrives on attention and knows how to keep all eyes on them."
+  },
+  {
+    "personality": ["consistent", "dependable"],
+    "playstyle": ["supporting", "loyal-following"],
+    "character_summary": "A long-time team assistant who reliably supports leadership and keeps things running smoothly."
+  },
+  {
+    "personality": ["secretive", "methodical"],
+    "playstyle": ["sabotaging", "covert"],
+    "character_summary": "A cybersecurity specialist who works behind the scenes, quietly identifying and exploiting vulnerabilities."
+  },
+  {
+    "personality": ["optimistic", "friendly"],
+    "playstyle": ["morale-boosting", "cooperative"],
+    "character_summary": "A camp counselor who focuses on keeping spirits high and fostering teamwork among groups."
+  },
+  {
+    "personality": ["patient", "calculating"],
+    "playstyle": ["slow-play", "endgame-control"],
+    "character_summary": "A retired grandmaster-level board game player who specializes in slow, deliberate strategies and endgame mastery."
+  }
+]

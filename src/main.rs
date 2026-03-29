@@ -1,69 +1,39 @@
-use axum::{routing::post, Json, Router};
+use axum::{Json, Router, extract::State, routing::post};
 use serde::{Deserialize, Serialize};
+use server::{game, init, state::AppState};
 use tokio::net::TcpListener;
 use tower_http::cors::CorsLayer;
 
 #[derive(Deserialize)]
-struct GameInput {
+struct Input {
     message: String,
 }
 
 #[derive(Serialize)]
-struct GameOutput {
+struct Output {
     reply: String,
 }
 
-async fn call_llm(prompt: &str) -> String {
-    let api_key = std::env::var("OPENAI_API_KEY").unwrap();
-
-    let client = reqwest::Client::new();
-
-    let res = client
-        .post("https://api.openai.com/v1/chat/completions")
-        .bearer_auth(api_key)
-        .json(&serde_json::json!({
-            "model": "gpt-4o-mini",
-            "messages": [
-                {"role": "user", "content": prompt}
-            ]
-        }))
-        .send()
-        .await
-        .unwrap();
-
-    let json: serde_json::Value = res.json().await.unwrap();
-
-    json["choices"][0]["message"]["content"]
-        .as_str()
-        .unwrap()
-        .to_string()
-}
-
-async fn play(Json(input): Json<GameInput>) -> Json<GameOutput> {
-    let reply = call_llm(&input.message).await;
-    Json(GameOutput { reply })
+async fn handler(State(state): State<AppState>, Json(input): Json<Input>) -> Json<Output> {
+    let mut inner_state = state.state.lock().await;
+    let reply = game::run(&mut inner_state, &input.message).await;
+    Json(Output { reply })
 }
 
 #[tokio::main]
 async fn main() {
+    let state = init::init();
     let cors = CorsLayer::permissive();
-
     let app = Router::new()
-        .route("/play", post(play))
+        .route("/play", post(handler))
+        .with_state(state)
         .layer(cors);
-
     let port = std::env::var("PORT")
         .unwrap_or_else(|_| "3000".to_string())
         .parse::<u16>()
         .unwrap();
-
     let addr = format!("0.0.0.0:{}", port);
-
     println!("Running on {}", addr);
-
     let listener = TcpListener::bind(addr).await.unwrap();
-
-    axum::serve(listener, app)
-        .await
-        .unwrap();
+    axum::serve(listener, app).await.unwrap();
 }
