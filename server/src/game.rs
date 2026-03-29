@@ -178,9 +178,10 @@ pub async fn run(state: &mut state::State, session_id: &Uuid, input: &String) ->
                 return ret;
             }
             Round::Question(id) => {
+                let old_ret = ret;
+                ret = String::new();
                 if id == 1 {
                     ret.push_str(format!("\n\nPlayer 1: {input}").as_str());
-                    game_state.log.push_str(&game_state.player_prompt);
                 } else {
                     let prompt = build_prompt(&game_state.log, &game_state.player_prompt);
                     let bot_response = call_llm(
@@ -192,7 +193,9 @@ pub async fn run(state: &mut state::State, session_id: &Uuid, input: &String) ->
                     let bot_text = bot_response.text;
                     ret.push_str(format!("\n\nPlayer {}: {}", id, bot_text).as_str());
                 };
+                game_state.log.push_str(&game_state.player_prompt);
                 game_state.log.push_str(format!("{ret}").as_str());
+                ret = old_ret + &ret;
                 game_state.round = Round::Answer(id);
                 game_state.player_prompt =
                     "\n\nGame Master: Other players, your turn to answer!".to_string();
