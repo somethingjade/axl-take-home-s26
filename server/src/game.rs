@@ -116,7 +116,7 @@ impl GameState {
             )
         } else {
             format!(
-                "You are not the impostor.\nThe prompt is: {}.\n",
+                "You are not the impostor.\nThe prompt is: {}.",
                 self.prompt
             )
         };
