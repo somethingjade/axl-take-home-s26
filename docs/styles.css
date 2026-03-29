@@ -29,7 +29,6 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
   transition: box-shadow 0.2s ease;
 }
@@ -44,11 +43,8 @@ body {
   text-align: center;
   font-size: 20px;
   font-weight: 600;
-
   color: #f0b35a; /* warm amber gold */
-
   border-bottom: 1px solid #3a2a1c;
-
   letter-spacing: 2px;
   text-transform: uppercase;
 }
