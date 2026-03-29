@@ -1,47 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>LLM Game</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Off Script</title>
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<h2>LLM Game</h2>
+<div class="app">
+  <div class="header">Off Script</div>
 
-<div id="chat"></div>
+  <div id="chat"></div>
 
-<input id="input" />
-<button onclick="send()">Send</button>
+  <div class="input-row">
+    <input id="input" placeholder="Message..." />
+    <button onclick="sendBtn()">Send</button>
+  </div>
+</div>
 
-<script>
-const backend = "https://axl-take-home-s26-backend.onrender.com/play";
-
-async function send() {
-  const input = document.getElementById("input");
-  const chat = document.getElementById("chat");
-
-  const msg = input.value;
-  input.value = "";
-
-  chat.innerText += "\nPlease wait...";
-
-  try {
-    const res = await fetch(backend, {
-      method: "POST",
-      headers: {"Content-Type": "application/json"},
-      body: JSON.stringify({ message: msg })
-    });
-
-    const data = await res.json();
-
-    chat.innerText = chat.innerText.replace(
-      "\nPlease wait...",
-      data.reply
-    );
-  } catch {
-    chat.innerText += "\n[Server waking up or error]";
-  }
-}
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
