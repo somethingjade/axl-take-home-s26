@@ -217,10 +217,6 @@ pub async fn run(state: &mut state::State, input: &String) -> String {
                 game_state.log.push_str(format!("{ret}").as_str());
                 loop {
                     if id == game_state.player_count as u32 {
-                        // game_state.round = Round::Voting;
-                        // game_state.player_prompt = "\n\nGame Master: It's time to vote! Please state the number of the player who you believe to be the impostor.".to_string();
-                        // ret.push_str(&game_state.player_prompt);
-                        // return ret;
                         game_state.round = Round::Discussion;
                         game_state.player_prompt ="\n\nGame Master: It's almost time to vote! Players, please provide your thoughts before we proceed to voting.".to_string();
                         ret.push_str(&game_state.player_prompt);
@@ -329,7 +325,7 @@ pub async fn run(state: &mut state::State, input: &String) -> String {
                     false
                 };
                 if eliminate == 1 {
-                    ret.push_str(format!("\n\nYou were voted out - game over").as_str());
+                    ret.push_str(format!("\n\nYou were voted out - game over!").as_str());
                     game_state.reset();
                     return ret;
                 }
