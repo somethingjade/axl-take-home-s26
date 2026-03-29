@@ -33,9 +33,18 @@ async fn new_session(
 }
 
 async fn handler(State(state): State<AppState>, Json(input): Json<Input>) -> Json<Output> {
+    println!("[DEBUG] Session ID: {}", input.session_id);
     println!("[DEBUG] Input: {}", input.message);
     let mut inner_state = state.state.lock().await;
     let reply = game::run(&mut inner_state, &input.session_id, &input.message).await;
+    match inner_state.sessions.get(&input.session_id) {
+        Some(game_state) if game_state.done() => {
+            inner_state.sessions.remove(&input.session_id);
+            println!("[DEBUG] Session complete: {}", input.session_id);
+        },
+        _ => ()
+    }
+    println!("[DEBUG] Active sessions: {}", inner_state.sessions.len());
     println!("[DEBUG] Reply: {}", reply);
     Json(Output { reply })
 }

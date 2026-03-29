@@ -21,6 +21,7 @@ pub enum Round {
     Answer(u32),
     Discussion,
     Voting,
+    End,
 }
 
 #[derive(Deserialize, Serialize)]
@@ -81,8 +82,8 @@ impl GameState {
         return ret;
     }
 
-    pub fn reset(&mut self) {
-        *self = Self::init();
+    pub fn done(&self) -> bool {
+        matches!(self.round, Round::End)
     }
 
     fn load_bots(&mut self) {
@@ -140,7 +141,12 @@ impl GameState {
 
 pub async fn run(state: &mut state::State, session_id: &Uuid, input: &String) -> String {
     let config = &state.config;
-    let game_state = state.sessions.get_mut(session_id).expect("[ERROR] Failed to get session state");
+    let game_state = match state.sessions.get_mut(session_id) {
+        Some(val) => val,
+        None => {
+            return "".to_string();
+        },
+    };
     let mut ret = String::new();
     loop {
         match game_state.round {
@@ -328,19 +334,19 @@ pub async fn run(state: &mut state::State, session_id: &Uuid, input: &String) ->
                 };
                 if eliminate == 1 {
                     ret.push_str(format!("\n\nYou were voted out - game over!").as_str());
-                    game_state.reset();
+                    game_state.round = Round::End;
                     return ret;
                 }
                 if impostor_eliminated {
                     ret.push_str("\n\nGame Master: Congratulations! You have successfully voted out the impostor!");
-                    game_state.reset();
+                    game_state.round = Round::End;
                     return ret;
                 }
                 if !impostor_eliminated
                     && game_state.eliminated_players.len() == game_state.player_count - 2
                 {
                     ret.push_str(format!("\n\nGame Master: There are only 2 players remaining. The impostor, Player {}, wins!", game_state.impostor).as_str());
-                    game_state.reset();
+                    game_state.round = Round::End;
                     return ret;
                 }
                 game_state.log.push_str(&game_state.player_prompt);
@@ -351,6 +357,9 @@ pub async fn run(state: &mut state::State, session_id: &Uuid, input: &String) ->
                 ret.push_str(&game_state.player_prompt);
                 return ret;
             }
+            Round::End => {
+                return "".to_string();
+            },
         };
     }
 }
