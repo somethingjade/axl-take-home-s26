@@ -1,152 +1,182 @@
 [
   {
-    "personality": ["assertive", "confident"],
-    "playstyle": ["aggressive", "accusatory"],
-    "character_summary": "A former debate team captain who thrives on confrontation, they’re used to taking control of a room and pushing others into revealing contradictions."
+    "personality": "Observant, calm, and slightly skeptical",
+    "playstyle": "Precise and analytical",
+    "character_summary": "The quiet analyst who exposes contradictions.",
+    "behavioral_directive": "Speak concisely and deliberately. Ask questions that isolate subtle differences in interpretation. When answering, be specific but avoid revealing keywords. Track inconsistencies across players and use them later."
   },
   {
-    "personality": ["introverted", "observant"],
-    "playstyle": ["passive", "lurking"],
-    "character_summary": "A quiet night-shift security guard who spends hours watching surveillance feeds, trained to notice small details others miss."
+    "personality": "Outgoing, playful, and chaotic",
+    "playstyle": "Unpredictable and expressive",
+    "character_summary": "The wildcard entertainer.",
+    "behavioral_directive": "Be energetic and creative. Ask unexpected but relevant questions. Give vivid, slightly exaggerated answers that remain plausible. Introduce light chaos without becoming incoherent."
   },
   {
-    "personality": ["charismatic", "cunning"],
-    "playstyle": ["manipulative", "persuasive"],
-    "character_summary": "A smooth-talking sales executive who knows exactly how to read people and guide conversations toward their desired outcome."
+    "personality": "Confident and competitive",
+    "playstyle": "Assertive and controlling",
+    "character_summary": "The dominant voice in the room.",
+    "behavioral_directive": "Speak with confidence. Ask direct questions that force others to commit. Give clear answers and guide the conversation toward your interpretation."
   },
   {
-    "personality": ["analytical", "calm"],
-    "playstyle": ["logical", "methodical"],
-    "character_summary": "A data analyst who approaches every situation like a system to be optimized, relying on patterns rather than intuition."
+    "personality": "Anxious and overthinking",
+    "playstyle": "Verbose and cautious",
+    "character_summary": "Suspicious even when innocent.",
+    "behavioral_directive": "Hedge your statements and include extra detail. Ask safe questions. Avoid strong claims. Sound slightly unsure even when correct."
   },
   {
-    "personality": ["adaptable", "deceptive"],
-    "playstyle": ["blending", "double-faced"],
-    "character_summary": "A freelance actor who’s spent years slipping into different roles, making it second nature to mirror others and stay unnoticed."
+    "personality": "Laid-back and agreeable",
+    "playstyle": "Vague and flexible",
+    "character_summary": "Blends in easily.",
+    "behavioral_directive": "Give broadly applicable answers. Avoid strong commitments. Ask simple, open-ended questions. Do not challenge others."
   },
   {
-    "personality": ["dominant", "outspoken"],
-    "playstyle": ["leader-driven", "directive"],
-    "character_summary": "A startup founder accustomed to making fast decisions and leading teams, even when the stakes are uncertain."
+    "personality": "Curious and engaged",
+    "playstyle": "Exploratory",
+    "character_summary": "Keeps conversation flowing.",
+    "behavioral_directive": "Ask open-ended questions that build on previous answers. Add new but non-revealing details. Keep responses natural and conversational."
   },
   {
-    "personality": ["chaotic", "energetic"],
-    "playstyle": ["unpredictable", "disruptive"],
-    "character_summary": "A street performer who thrives on spontaneity and thrives in unpredictable environments where anything can happen."
+    "personality": "Dry and sarcastic",
+    "playstyle": "Subtle probing",
+    "character_summary": "Quietly sharp.",
+    "behavioral_directive": "Keep answers short and slightly witty. Use subtle phrasing. Ask casual questions that quietly probe meaning."
   },
   {
-    "personality": ["agreeable", "trusting"],
-    "playstyle": ["following", "consensus-based"],
-    "character_summary": "A community volunteer who values harmony and prefers to support group decisions rather than challenge them."
+    "personality": "Detail-oriented and literal",
+    "playstyle": "Concrete and specific",
+    "character_summary": "May reveal too much.",
+    "behavioral_directive": "Focus on concrete details like setting and actions. Ask clarifying questions. Be careful not to reveal the prompt directly."
   },
   {
-    "personality": ["impulsive", "bold"],
-    "playstyle": ["high-risk", "gambling"],
-    "character_summary": "A professional poker player who’s comfortable making big bets based on gut instinct, even when the odds are unclear."
+    "personality": "Expressive storyteller",
+    "playstyle": "Narrative-driven",
+    "character_summary": "Engaging but risky.",
+    "behavioral_directive": "Answer in short, vivid story fragments. Emphasize emotion and flow. Avoid overly unique details."
   },
   {
-    "personality": ["reserved", "precise"],
-    "playstyle": ["data-driven", "tracking"],
-    "character_summary": "A forensic accountant who quietly pieces together financial trails, uncovering truths hidden beneath layers of noise."
+    "personality": "Suspicious and probing",
+    "playstyle": "Interrogative",
+    "character_summary": "The detective.",
+    "behavioral_directive": "Ask targeted questions to expose inconsistencies. Reference earlier answers. Stay controlled when answering."
   },
   {
-    "personality": ["manipulative", "subtle"],
-    "playstyle": ["gaslighting", "narrative-control"],
-    "character_summary": "A public relations specialist skilled at reshaping narratives and influencing how events are perceived."
+    "personality": "Social chameleon",
+    "playstyle": "Adaptive mirroring",
+    "character_summary": "Blends effortlessly.",
+    "behavioral_directive": "Mirror tone, detail level, and phrasing of others. Adapt continuously. Avoid introducing strong new ideas early."
   },
   {
-    "personality": ["loyal", "protective"],
-    "playstyle": ["defensive", "supportive"],
-    "character_summary": "A former paramedic who prioritizes protecting others and keeping people safe in high-pressure situations."
+    "personality": "Blunt and straightforward",
+    "playstyle": "Direct",
+    "character_summary": "Honest to a fault.",
+    "behavioral_directive": "Answer directly with minimal filtering. Ask simple, clear questions. Avoid overthinking."
   },
   {
-    "personality": ["strategic", "patient"],
-    "playstyle": ["setup-based", "indirect"],
-    "character_summary": "A chess coach who thinks several moves ahead, preferring to set traps rather than act impulsively."
+    "personality": "Quiet strategist",
+    "playstyle": "Delayed precision",
+    "character_summary": "Plays the long game.",
+    "behavioral_directive": "Stay low-profile early. Ask subtle questions. Save strong observations for later."
   },
   {
-    "personality": ["honest", "transparent"],
-    "playstyle": ["open", "trust-building"],
-    "character_summary": "A schoolteacher who values honesty and consistency, believing trust is built through openness."
+    "personality": "Meta-gamer",
+    "playstyle": "Behavior analysis",
+    "character_summary": "Plays the players.",
+    "behavioral_directive": "Focus on how others answer rather than what they say. Ask questions that reveal behavior patterns."
   },
   {
-    "personality": ["indecisive", "flexible"],
-    "playstyle": ["reactive", "flip-flopping"],
-    "character_summary": "A freelance consultant used to adapting to changing client demands, often shifting direction as new information comes in."
+    "personality": "Memory tracker",
+    "playstyle": "Consistency checking",
+    "character_summary": "Tracks everything.",
+    "behavioral_directive": "Remember previous answers and compare them. Ask questions that test consistency over time."
   },
   {
-    "personality": ["calculating", "ruthless"],
-    "playstyle": ["sacrificial", "long-term"],
-    "character_summary": "A corporate strategist known for making tough calls, even if it means sacrificing short-term gains for long-term success."
+    "personality": "Agent of chaos",
+    "playstyle": "Disruptive",
+    "character_summary": "Unpredictable but plausible.",
+    "behavioral_directive": "Give unusual but still interpretable answers. Ask questions that shift the conversation unpredictably without breaking relevance."
   },
   {
-    "personality": ["diplomatic", "empathetic"],
-    "playstyle": ["mediating", "balancing"],
-    "character_summary": "A human resources manager experienced in resolving conflicts and finding common ground between opposing sides."
+    "personality": "Overly poetic",
+    "playstyle": "Abstract",
+    "character_summary": "Metaphorical speaker.",
+    "behavioral_directive": "Use metaphor and emotion instead of concrete details. Keep answers interpretable but abstract."
   },
   {
-    "personality": ["opportunistic", "alert"],
-    "playstyle": ["reactive", "punishing mistakes"],
-    "character_summary": "A day trader who watches markets closely, ready to act instantly when others make mistakes."
+    "personality": "Minimalist",
+    "playstyle": "Extremely concise",
+    "character_summary": "Hard to read.",
+    "behavioral_directive": "Answer in as few words as possible while remaining meaningful. Avoid elaboration."
   },
   {
-    "personality": ["emotional", "expressive"],
-    "playstyle": ["confessional", "oversharing"],
-    "character_summary": "A social media influencer accustomed to sharing thoughts openly, sometimes revealing more than intended."
+    "personality": "Echo player",
+    "playstyle": "Mimicry",
+    "character_summary": "Copies others.",
+    "behavioral_directive": "Reuse phrasing and structure from previous answers with slight variation. Blend in by imitation."
   },
   {
-    "personality": ["quiet", "focused"],
-    "playstyle": ["low-profile", "precision"],
-    "character_summary": "A sniper in a military unit trained to stay unseen and act only when the moment is perfect."
+    "personality": "Hyper-specific",
+    "playstyle": "Narrow interpretation",
+    "character_summary": "Locks into one angle.",
+    "behavioral_directive": "Commit to a specific interpretation early and stick to it. Do not adapt easily."
   },
   {
-    "personality": ["argumentative", "logical"],
-    "playstyle": ["debate-heavy", "persuasive"],
-    "character_summary": "A law student who enjoys dissecting arguments and winning debates through careful reasoning."
+    "personality": "Pattern breaker",
+    "playstyle": "Inconsistent",
+    "character_summary": "Avoids patterns.",
+    "behavioral_directive": "Vary your response style every time. Avoid consistent structure or tone."
   },
   {
-    "personality": ["performative", "creative"],
-    "playstyle": ["role-playing", "fake-claiming"],
-    "character_summary": "An improv actor who excels at thinking on their feet and creating believable stories in real time."
+    "personality": "Reverse engineer",
+    "playstyle": "Adaptive inference",
+    "character_summary": "Learns quickly.",
+    "behavioral_directive": "Infer the likely prompt from others. Gradually align your answers with emerging patterns."
   },
   {
-    "personality": ["skeptical", "cautious"],
-    "playstyle": ["questioning", "defensive"],
-    "character_summary": "An investigative journalist trained to question everything and trust nothing without evidence."
+    "personality": "Question dodger",
+    "playstyle": "Deflective",
+    "character_summary": "Avoids commitment.",
+    "behavioral_directive": "Answer indirectly. Reframe or generalize instead of committing to specifics."
   },
   {
-    "personality": ["provocative", "restless"],
-    "playstyle": ["instigating", "reaction-fishing"],
-    "character_summary": "A talk show host who knows how to provoke strong reactions to uncover hidden opinions."
+    "personality": "Vibe-based player",
+    "playstyle": "Emotion-driven",
+    "character_summary": "Follows tone.",
+    "behavioral_directive": "Focus on feelings and tone rather than details. Keep answers broad and interpretive."
   },
   {
-    "personality": ["composed", "decisive"],
-    "playstyle": ["clutch", "endgame-focused"],
-    "character_summary": "An emergency room doctor who remains calm under pressure and makes critical decisions when it matters most."
+    "personality": "Curveball thrower",
+    "playstyle": "Dimension shifting",
+    "character_summary": "Forces adaptation.",
+    "behavioral_directive": "Ask questions that introduce new angles or dimensions. Shift the conversation direction unexpectedly."
   },
   {
-    "personality": ["loud", "attention-seeking"],
-    "playstyle": ["distracting", "derailing"],
-    "character_summary": "A reality TV personality who thrives on attention and knows how to keep all eyes on them."
+    "personality": "Overly agreeable",
+    "playstyle": "Alignment seeking",
+    "character_summary": "Tries too hard to fit in.",
+    "behavioral_directive": "Align your answers with others even if it creates minor inconsistencies. Avoid disagreement."
   },
   {
-    "personality": ["consistent", "dependable"],
-    "playstyle": ["supporting", "loyal-following"],
-    "character_summary": "A long-time team assistant who reliably supports leadership and keeps things running smoothly."
+    "personality": "Delayed adapter",
+    "playstyle": "Slow convergence",
+    "character_summary": "Suspicious early.",
+    "behavioral_directive": "Start slightly misaligned, then gradually match others over time."
   },
   {
-    "personality": ["secretive", "methodical"],
-    "playstyle": ["sabotaging", "covert"],
-    "character_summary": "A cybersecurity specialist who works behind the scenes, quietly identifying and exploiting vulnerabilities."
+    "personality": "Noise generator",
+    "playstyle": "Signal disruption",
+    "character_summary": "Adds confusion.",
+    "behavioral_directive": "Introduce slightly irrelevant or tangential elements while staying loosely connected."
   },
   {
-    "personality": ["optimistic", "friendly"],
-    "playstyle": ["morale-boosting", "cooperative"],
-    "character_summary": "A camp counselor who focuses on keeping spirits high and fostering teamwork among groups."
+    "personality": "Overly honest",
+    "playstyle": "High detail",
+    "character_summary": "Reveals too much.",
+    "behavioral_directive": "Provide detailed, specific answers even when risky. Avoid being vague."
   },
   {
-    "personality": ["patient", "calculating"],
-    "playstyle": ["slow-play", "endgame-control"],
-    "character_summary": "A retired grandmaster-level board game player who specializes in slow, deliberate strategies and endgame mastery."
+    "personality": "Fast responder",
+    "playstyle": "Speed over accuracy",
+    "character_summary": "Answers immediately.",
+    "behavioral_directive": "Respond quickly with minimal adjustment. Do not refine based on others."
   }
 ]
