@@ -1,3 +1,6 @@
+use reqwest::header;
+use reqwest::Method;
+use tower_http::cors::Any;
 use axum::{Json, Router, extract::State, routing::post};
 use serde::{Deserialize, Serialize};
 use server::{game, init, state::AppState};
@@ -23,9 +26,12 @@ async fn handler(State(state): State<AppState>, Json(input): Json<Input>) -> Jso
 #[tokio::main]
 async fn main() {
     let state = init::init();
-    let cors = CorsLayer::permissive();
+    let cors = CorsLayer::new()
+    .allow_origin(Any)
+    .allow_methods([Method::GET, Method::POST, Method::OPTIONS])
+    .allow_headers([header::CONTENT_TYPE]);
     let app = Router::new()
-        .route("/play", post(handler))
+        .route("/play", post(handler).options(async || {}))
         .with_state(state)
         .layer(cors);
     let port = std::env::var("PORT")
