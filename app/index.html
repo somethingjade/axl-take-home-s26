@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LLM Game</title>
+</head>
+<body>
+
+<h2>LLM Game</h2>
+
+<div id="chat"></div>
+
+<input id="input" />
+<button onclick="send()">Send</button>
+
+<script>
+const backend = "https://axl-take-home-s26-backend.onrender.com/play";
+
+async function send() {
+  const input = document.getElementById("input");
+  const chat = document.getElementById("chat");
+
+  const msg = input.value;
+  input.value = "";
+
+  chat.innerText += "\nPlease wait...";
+
+  try {
+    const res = await fetch(backend, {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({ message: msg })
+    });
+
+    const data = await res.json();
+
+    chat.innerText = chat.innerText.replace(
+      "\nPlease wait...",
+      data.reply
+    );
+  } catch {
+    chat.innerText += "\n[Server waking up or error]";
+  }
+}
+</script>
+
+</body>
+</html>
