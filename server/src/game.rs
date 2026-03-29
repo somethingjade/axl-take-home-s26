@@ -140,6 +140,7 @@ impl GameState {
     }
 }
 
+// This function is a mess.
 pub async fn run(state: &mut state::State, session_id: &Uuid, input: &String) -> String {
     let config = &state.config;
     let game_state = match state.sessions.get_mut(session_id) {
