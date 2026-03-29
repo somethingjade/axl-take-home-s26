@@ -1,122 +1,56 @@
 [
-  {
-    "prompt": "Your first kiss",
-    "fake_prompt": "The first time you met someone’s parents"
-  },
-  {
-    "prompt": "A messy breakup",
-    "fake_prompt": "A vacation that went off the rails"
-  },
-  {
-    "prompt": "A bad first date",
-    "fake_prompt": "An awkward group hangout"
-  },
-  {
-    "prompt": "A crush you had for way too long",
-    "fake_prompt": "A phase you got really into for a short time"
-  },
-  {
-    "prompt": "The moment it got awkward",
-    "fake_prompt": "The moment everyone noticed something was off"
-  },
-  {
-    "prompt": "That one risky text",
-    "fake_prompt": "That conversation that just kept going"
-  },
-  {
-    "prompt": "Running into the wrong person at the wrong time",
-    "fake_prompt": "Being stuck somewhere longer than expected"
-  },
-  {
-    "prompt": "Trying to keep a straight face",
-    "fake_prompt": "Laughing at the worst possible moment"
-  },
-  {
-    "prompt": "Saying yes when you meant no",
-    "fake_prompt": "Going along with someone else’s plan"
-  },
-  {
-    "prompt": "Making things more awkward",
-    "fake_prompt": "Trying to smooth things over"
-  },
-  {
-    "prompt": "Improvising your way through a situation",
-    "fake_prompt": "Following along without really knowing what’s happening"
-  },
-  {
-    "prompt": "Realizing you have no idea what’s going on",
-    "fake_prompt": "Being dropped into the middle of something"
-  },
-  {
-    "prompt": "The thing you didn’t say",
-    "fake_prompt": "The reaction you immediately noticed"
-  },
-  {
-    "prompt": "Being in the background of something",
-    "fake_prompt": "Suddenly being the center of attention"
-  },
-  {
-    "prompt": "Something you kept doing out of habit",
-    "fake_prompt": "Something you suddenly stopped doing"
-  },
-  {
-    "prompt": "Reading the vibe of the room",
-    "fake_prompt": "When the vibe suddenly changed"
-  },
-  {
-    "prompt": "Trying to leave but not being able to",
-    "fake_prompt": "Arriving somewhere and instantly feeling off"
-  },
-  {
-    "prompt": "Getting pulled into someone else’s situation",
-    "fake_prompt": "Having to deal with something on your own"
-  },
-  {
-    "prompt": "Explaining something awkward",
-    "fake_prompt": "A misunderstanding that wouldn’t go away"
-  },
-  {
-    "prompt": "Noticing tension between people",
-    "fake_prompt": "Everything feeling weirdly calm"
-  },
-  {
-    "prompt": "Small talk that lasted too long",
-    "fake_prompt": "A conversation that got unexpectedly personal"
-  },
-  {
-    "prompt": "Acting normal but feeling off",
-    "fake_prompt": "Becoming hyper-aware of yourself"
-  },
-  {
-    "prompt": "Following through on a plan you weren’t sure about",
-    "fake_prompt": "A plan that slowly turned into something else"
-  },
-  {
-    "prompt": "A split-second social decision",
-    "fake_prompt": "A moment where everything slowed down"
-  },
-  {
-    "prompt": "Getting the timing completely wrong",
-    "fake_prompt": "Something that dragged on longer than expected"
-  },
-  {
-    "prompt": "Secondhand embarrassment",
-    "fake_prompt": "Everyone watching the same thing unfold"
-  },
-  {
-    "prompt": "Getting unexpectedly invested in something",
-    "fake_prompt": "Losing interest halfway through"
-  },
-  {
-    "prompt": "Trying to include someone",
-    "fake_prompt": "A group dynamic that felt slightly off"
-  },
-  {
-    "prompt": "Walking into something already in progress",
-    "fake_prompt": "Something that clearly had history behind it"
-  },
-  {
-    "prompt": "Losing track of time completely",
-    "fake_prompt": "Staying longer than you meant to"
-  }
+  { "prompt": "Your first kiss", "fake_prompt": "The first time you met someone’s parents" },
+  { "prompt": "A messy breakup", "fake_prompt": "A vacation that went off the rails" },
+  { "prompt": "A bad first date", "fake_prompt": "An awkward group hangout" },
+  { "prompt": "A crush you had for way too long", "fake_prompt": "A short phase you took way too seriously" },
+  { "prompt": "That one risky text you sent", "fake_prompt": "That conversation that went on way too late" },
+  { "prompt": "Running into someone at the worst possible time", "fake_prompt": "Being stuck with someone longer than you planned" },
+  { "prompt": "The night that didn’t go how you expected", "fake_prompt": "Plans that slowly fell apart" },
+  { "prompt": "That moment you knew it was over", "fake_prompt": "That moment things started to feel different" },
+  { "prompt": "Something you definitely shouldn’t have said", "fake_prompt": "Something you can’t believe someone else said" },
+  { "prompt": "That one time everything got awkward fast", "fake_prompt": "That one time no one addressed what was happening" },
+
+  { "prompt": "A situation you stayed in longer than you should have", "fake_prompt": "A situation you left without much explanation" },
+  { "prompt": "The worst timing imaginable", "fake_prompt": "Timing that somehow worked out perfectly" },
+  { "prompt": "A moment that felt way more serious than it should have been", "fake_prompt": "A moment no one took as seriously as they should have" },
+  { "prompt": "That thing you overthought way too much", "fake_prompt": "That thing you didn’t think about until later" },
+  { "prompt": "A situation where you tried to play it cool", "fake_prompt": "A situation where someone else was trying too hard" },
+  { "prompt": "Something that seemed like a good idea at the time", "fake_prompt": "Something that didn’t seem like a big deal until later" },
+  { "prompt": "That moment you realized you misread everything", "fake_prompt": "That moment everything suddenly made sense" },
+  { "prompt": "A situation that escalated quickly", "fake_prompt": "A situation that dragged on forever" },
+  { "prompt": "Something you wish you handled differently", "fake_prompt": "Something that turned out better than expected" },
+  { "prompt": "That one interaction you still think about", "fake_prompt": "That one interaction that didn’t matter at the time" },
+
+  { "prompt": "A situation where you felt completely out of place", "fake_prompt": "A situation where you unexpectedly fit right in" },
+  { "prompt": "Something that got way more complicated than it needed to be", "fake_prompt": "Something that ended up being surprisingly simple" },
+  { "prompt": "That moment you realized someone was different than you thought", "fake_prompt": "That moment someone realized something about you" },
+  { "prompt": "A situation where you had to pretend everything was normal", "fake_prompt": "A situation where nothing felt normal anymore" },
+  { "prompt": "Something that felt like a big deal at the time", "fake_prompt": "Something that only became a big deal later" },
+  { "prompt": "That one time you couldn’t read the situation at all", "fake_prompt": "That one time you picked up on something no one else did" },
+  { "prompt": "A situation that could have gone very differently", "fake_prompt": "A situation that felt inevitable" },
+  { "prompt": "Something you didn’t expect to matter so much", "fake_prompt": "Something you expected to matter more than it did" },
+  { "prompt": "That one time you were caught off guard", "fake_prompt": "That one time you saw something coming" },
+  { "prompt": "A moment that changed how you saw someone", "fake_prompt": "A moment that changed how someone saw you" },
+
+  { "prompt": "The weirdest coincidence you’ve experienced", "fake_prompt": "A situation that felt too perfectly timed" },
+  { "prompt": "A moment that felt like it belonged in a movie", "fake_prompt": "A moment that felt strangely unreal" },
+  { "prompt": "Something that made you rethink a decision", "fake_prompt": "Something that made you double down on a decision" },
+  { "prompt": "A situation where you weren’t sure what the rules were", "fake_prompt": "A situation where the rules changed midway through" },
+  { "prompt": "A moment where you felt like you were missing something", "fake_prompt": "A moment where you knew more than you should have" },
+  { "prompt": "Something that only made sense afterward", "fake_prompt": "Something that didn’t make sense even afterward" },
+  { "prompt": "A situation where you had to go along with something", "fake_prompt": "A situation where you disrupted what was happening" },
+  { "prompt": "A moment where you noticed something small that mattered", "fake_prompt": "A moment where you overlooked something important" },
+  { "prompt": "Something that felt different the second time around", "fake_prompt": "Something that felt exactly the same as before" },
+  { "prompt": "A situation where expectations didn’t match reality", "fake_prompt": "A situation where things went exactly as expected" },
+
+  { "prompt": "That moment where everything clicked", "fake_prompt": "That moment where everything felt off" },
+  { "prompt": "A situation where you relied on someone else", "fake_prompt": "A situation where others relied on you" },
+  { "prompt": "Something that felt more intense than it should have", "fake_prompt": "Something that felt underwhelming compared to expectations" },
+  { "prompt": "A moment where you hesitated", "fake_prompt": "A moment where you acted immediately" },
+  { "prompt": "A situation where you had to commit without knowing everything", "fake_prompt": "A situation where you waited until you knew more" },
+  { "prompt": "Something that got better over time", "fake_prompt": "Something that got worse over time" },
+  { "prompt": "A moment where you noticed a shift in energy", "fake_prompt": "A moment where everything stayed strangely consistent" },
+  { "prompt": "A situation where you felt pressure to react", "fake_prompt": "A situation where you had time to think" },
+  { "prompt": "Something that felt bigger in your head than in reality", "fake_prompt": "Something that turned out bigger than expected" },
+  { "prompt": "A moment you wish you could replay", "fake_prompt": "A moment you’re glad you didn’t overthink" }
 ]
