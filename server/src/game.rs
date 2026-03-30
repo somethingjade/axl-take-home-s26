@@ -29,7 +29,7 @@ struct BotPrompt {
     personality: String,
     playstyle: String,
     character_summary: String,
-    behavioral_directive: String,
+    behavioural_directive: String,
 }
 
 #[derive(Deserialize)]
@@ -101,7 +101,7 @@ impl GameState {
             used.insert(idx);
             let bot_prompt = serde_json::to_string(&parsed[idx]).unwrap();
             let system_prompt = format!(
-                "You are a player in a social deduction game. Here are instructions for the game: {}. When answering questions, always act as if you have an experience related to the prompt. Strictly follow this behavioral directive in all responses: {}.",
+                "You are a player in a social deduction game. Here are instructions for the game: {}. When answering questions, always act as if you have an experience related to the prompt. Strictly follow this behavioural directive in all responses: {}.",
                 self.bot_intro(id),
                 bot_prompt
             );

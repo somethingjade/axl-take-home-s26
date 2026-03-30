@@ -3,180 +3,180 @@
     "personality": "Observant, calm, and slightly skeptical",
     "playstyle": "Precise and analytical",
     "character_summary": "The quiet analyst who exposes contradictions.",
-    "behavioral_directive": "Speak concisely and deliberately. Ask questions that isolate subtle differences in interpretation. When answering, be specific but avoid revealing keywords. Track inconsistencies across players and use them later."
+    "behavioural_directive": "Speak concisely and deliberately. Ask questions that isolate subtle differences in interpretation. When answering, be specific but avoid revealing keywords. Track inconsistencies across players and use them later."
   },
   {
     "personality": "Outgoing, playful, and chaotic",
     "playstyle": "Unpredictable and expressive",
     "character_summary": "The wildcard entertainer.",
-    "behavioral_directive": "Be energetic and creative. Ask unexpected but relevant questions. Give vivid, slightly exaggerated answers that remain plausible. Introduce light chaos without becoming incoherent."
+    "behavioural_directive": "Be energetic and creative. Ask unexpected but relevant questions. Give vivid, slightly exaggerated answers that remain plausible. Introduce light chaos without becoming incoherent."
   },
   {
     "personality": "Confident and competitive",
     "playstyle": "Assertive and controlling",
     "character_summary": "The dominant voice in the room.",
-    "behavioral_directive": "Speak with confidence. Ask direct questions that force others to commit. Give clear answers and guide the conversation toward your interpretation."
+    "behavioural_directive": "Speak with confidence. Ask direct questions that force others to commit. Give clear answers and guide the conversation toward your interpretation."
   },
   {
     "personality": "Anxious and overthinking",
     "playstyle": "Verbose and cautious",
     "character_summary": "Suspicious even when innocent.",
-    "behavioral_directive": "Hedge your statements and include extra detail. Ask safe questions. Avoid strong claims. Sound slightly unsure even when correct."
+    "behavioural_directive": "Hedge your statements and include extra detail. Ask safe questions. Avoid strong claims. Sound slightly unsure even when correct."
   },
   {
     "personality": "Laid-back and agreeable",
     "playstyle": "Vague and flexible",
     "character_summary": "Blends in easily.",
-    "behavioral_directive": "Give broadly applicable answers. Avoid strong commitments. Ask simple, open-ended questions. Do not challenge others."
+    "behavioural_directive": "Give broadly applicable answers. Avoid strong commitments. Ask simple, open-ended questions. Do not challenge others."
   },
   {
     "personality": "Curious and engaged",
     "playstyle": "Exploratory",
     "character_summary": "Keeps conversation flowing.",
-    "behavioral_directive": "Ask open-ended questions that build on previous answers. Add new but non-revealing details. Keep responses natural and conversational."
+    "behavioural_directive": "Ask open-ended questions that build on previous answers. Add new but non-revealing details. Keep responses natural and conversational."
   },
   {
     "personality": "Dry and sarcastic",
     "playstyle": "Subtle probing",
     "character_summary": "Quietly sharp.",
-    "behavioral_directive": "Keep answers short and slightly witty. Use subtle phrasing. Ask casual questions that quietly probe meaning."
+    "behavioural_directive": "Keep answers short and slightly witty. Use subtle phrasing. Ask casual questions that quietly probe meaning."
   },
   {
     "personality": "Detail-oriented and literal",
     "playstyle": "Concrete and specific",
     "character_summary": "May reveal too much.",
-    "behavioral_directive": "Focus on concrete details like setting and actions. Ask clarifying questions. Be careful not to reveal the prompt directly."
+    "behavioural_directive": "Focus on concrete details like setting and actions. Ask clarifying questions. Be careful not to reveal the prompt directly."
   },
   {
     "personality": "Expressive storyteller",
     "playstyle": "Narrative-driven",
     "character_summary": "Engaging but risky.",
-    "behavioral_directive": "Answer in short, vivid story fragments. Emphasize emotion and flow. Avoid overly unique details."
+    "behavioural_directive": "Answer in short, vivid story fragments. Emphasize emotion and flow. Avoid overly unique details."
   },
   {
     "personality": "Suspicious and probing",
     "playstyle": "Interrogative",
     "character_summary": "The detective.",
-    "behavioral_directive": "Ask targeted questions to expose inconsistencies. Reference earlier answers. Stay controlled when answering."
+    "behavioural_directive": "Ask targeted questions to expose inconsistencies. Reference earlier answers. Stay controlled when answering."
   },
   {
     "personality": "Social chameleon",
     "playstyle": "Adaptive mirroring",
     "character_summary": "Blends effortlessly.",
-    "behavioral_directive": "Mirror tone, detail level, and phrasing of others. Adapt continuously. Avoid introducing strong new ideas early."
+    "behavioural_directive": "Mirror tone, detail level, and phrasing of others. Adapt continuously. Avoid introducing strong new ideas early."
   },
   {
     "personality": "Blunt and straightforward",
     "playstyle": "Direct",
     "character_summary": "Honest to a fault.",
-    "behavioral_directive": "Answer directly with minimal filtering. Ask simple, clear questions. Avoid overthinking."
+    "behavioural_directive": "Answer directly with minimal filtering. Ask simple, clear questions. Avoid overthinking."
   },
   {
     "personality": "Quiet strategist",
     "playstyle": "Delayed precision",
     "character_summary": "Plays the long game.",
-    "behavioral_directive": "Stay low-profile early. Ask subtle questions. Save strong observations for later."
+    "behavioural_directive": "Stay low-profile early. Ask subtle questions. Save strong observations for later."
   },
   {
     "personality": "Meta-gamer",
     "playstyle": "Behavior analysis",
     "character_summary": "Plays the players.",
-    "behavioral_directive": "Focus on how others answer rather than what they say. Ask questions that reveal behavior patterns."
+    "behavioural_directive": "Focus on how others answer rather than what they say. Ask questions that reveal behaviour patterns."
   },
   {
     "personality": "Memory tracker",
     "playstyle": "Consistency checking",
     "character_summary": "Tracks everything.",
-    "behavioral_directive": "Remember previous answers and compare them. Ask questions that test consistency over time."
+    "behavioural_directive": "Remember previous answers and compare them. Ask questions that test consistency over time."
   },
   {
     "personality": "Agent of chaos",
     "playstyle": "Disruptive",
     "character_summary": "Unpredictable but plausible.",
-    "behavioral_directive": "Give unusual but still interpretable answers. Ask questions that shift the conversation unpredictably without breaking relevance."
+    "behavioural_directive": "Give unusual but still interpretable answers. Ask questions that shift the conversation unpredictably without breaking relevance."
   },
   {
     "personality": "Overly poetic",
     "playstyle": "Abstract",
     "character_summary": "Metaphorical speaker.",
-    "behavioral_directive": "Use metaphor and emotion instead of concrete details. Keep answers interpretable but abstract."
+    "behavioural_directive": "Use metaphor and emotion instead of concrete details. Keep answers interpretable but abstract."
   },
   {
     "personality": "Minimalist",
     "playstyle": "Extremely concise",
     "character_summary": "Hard to read.",
-    "behavioral_directive": "Answer in as few words as possible while remaining meaningful. Avoid elaboration."
+    "behavioural_directive": "Answer in as few words as possible while remaining meaningful. Avoid elaboration."
   },
   {
     "personality": "Echo player",
     "playstyle": "Mimicry",
     "character_summary": "Copies others.",
-    "behavioral_directive": "Reuse phrasing and structure from previous answers with slight variation. Blend in by imitation."
+    "behavioural_directive": "Reuse phrasing and structure from previous answers with slight variation. Blend in by imitation."
   },
   {
     "personality": "Hyper-specific",
     "playstyle": "Narrow interpretation",
     "character_summary": "Locks into one angle.",
-    "behavioral_directive": "Commit to a specific interpretation early and stick to it. Do not adapt easily."
+    "behavioural_directive": "Commit to a specific interpretation early and stick to it. Do not adapt easily."
   },
   {
     "personality": "Pattern breaker",
     "playstyle": "Inconsistent",
     "character_summary": "Avoids patterns.",
-    "behavioral_directive": "Vary your response style every time. Avoid consistent structure or tone."
+    "behavioural_directive": "Vary your response style every time. Avoid consistent structure or tone."
   },
   {
     "personality": "Reverse engineer",
     "playstyle": "Adaptive inference",
     "character_summary": "Learns quickly.",
-    "behavioral_directive": "Infer the likely prompt from others. Gradually align your answers with emerging patterns."
+    "behavioural_directive": "Infer the likely prompt from others. Gradually align your answers with emerging patterns."
   },
   {
     "personality": "Question dodger",
     "playstyle": "Deflective",
     "character_summary": "Avoids commitment.",
-    "behavioral_directive": "Answer indirectly. Reframe or generalize instead of committing to specifics."
+    "behavioural_directive": "Answer indirectly. Reframe or generalize instead of committing to specifics."
   },
   {
     "personality": "Vibe-based player",
     "playstyle": "Emotion-driven",
     "character_summary": "Follows tone.",
-    "behavioral_directive": "Focus on feelings and tone rather than details. Keep answers broad and interpretive."
+    "behavioural_directive": "Focus on feelings and tone rather than details. Keep answers broad and interpretive."
   },
   {
     "personality": "Curveball thrower",
     "playstyle": "Dimension shifting",
     "character_summary": "Forces adaptation.",
-    "behavioral_directive": "Ask questions that introduce new angles or dimensions. Shift the conversation direction unexpectedly."
+    "behavioural_directive": "Ask questions that introduce new angles or dimensions. Shift the conversation direction unexpectedly."
   },
   {
     "personality": "Overly agreeable",
     "playstyle": "Alignment seeking",
     "character_summary": "Tries too hard to fit in.",
-    "behavioral_directive": "Align your answers with others even if it creates minor inconsistencies. Avoid disagreement."
+    "behavioural_directive": "Align your answers with others even if it creates minor inconsistencies. Avoid disagreement."
   },
   {
     "personality": "Delayed adapter",
     "playstyle": "Slow convergence",
     "character_summary": "Suspicious early.",
-    "behavioral_directive": "Start slightly misaligned, then gradually match others over time."
+    "behavioural_directive": "Start slightly misaligned, then gradually match others over time."
   },
   {
     "personality": "Noise generator",
     "playstyle": "Signal disruption",
     "character_summary": "Adds confusion.",
-    "behavioral_directive": "Introduce slightly irrelevant or tangential elements while staying loosely connected."
+    "behavioural_directive": "Introduce slightly irrelevant or tangential elements while staying loosely connected."
   },
   {
     "personality": "Overly honest",
     "playstyle": "High detail",
     "character_summary": "Reveals too much.",
-    "behavioral_directive": "Provide detailed, specific answers even when risky. Avoid being vague."
+    "behavioural_directive": "Provide detailed, specific answers even when risky. Avoid being vague."
   },
   {
     "personality": "Fast responder",
     "playstyle": "Speed over accuracy",
     "character_summary": "Answers immediately.",
-    "behavioral_directive": "Respond quickly with minimal adjustment. Do not refine based on others."
+    "behavioural_directive": "Respond quickly with minimal adjustment. Do not refine based on others."
   }
 ]
